@@ -3,11 +3,11 @@ package demo.hibernate;
 public class Alien {
     private int aid;
     private String aname;
-    private String color;
+    private String tech;
     
     public int getAid() {
         return aid;
-    }
+    } 
     public void setAid(int aid) {
         this.aid = aid;
     }
@@ -17,11 +17,15 @@ public class Alien {
     public void setAname(String aname) {
         this.aname = aname;
     }
-    public String getColor() {
-        return color;
+    public String gettech() {
+        return tech;
     }
-    public void setColor(String color) {
-        this.color = color;
+    public void settech(String tech) {
+        this.tech = tech;
     }
     
+    @Override
+    public String toString() {
+        return "Alien [aid=" + aid + ", aname=" + aname + ", tech=" + tech + "]";
+    }
 }
